@@ -421,7 +421,7 @@ void ImageProjection::publishClouds() {
 
   sensor_msgs::PointCloud2 temp;
   temp.header.stamp = _seg_msg.header.stamp;
-  temp.header.frame_id = "base_link";
+  temp.header.frame_id = "camera_link";
 
   auto PublishCloud = [](ros::Publisher& pub, sensor_msgs::PointCloud2& temp,
                           const pcl::PointCloud<PointType>::Ptr& cloud) {
