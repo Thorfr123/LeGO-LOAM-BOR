@@ -38,11 +38,10 @@ catkin_package(
 )
 
 include_directories(
-	include
-	${catkin_INCLUDE_DIRS}
+  include
+  ${catkin_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIR}
   ${PCL_INCLUDE_DIRS}
-  ${GTSAM_INCLUDE_DIR}
 )
 
 add_executable(lego_loam_bor
