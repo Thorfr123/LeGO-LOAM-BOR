@@ -53,8 +53,7 @@ add_executable(lego_loam_bor
 )
 
 add_dependencies(lego_loam_bor 
-  ${catkin_EXPORTED_TARGETS} 
-  cloud_msgs_gencpp
+  ${catkin_EXPORTED_TARGETS}
 )
 target_link_libraries(lego_loam_bor 
   ${catkin_LIBRARIES} 
