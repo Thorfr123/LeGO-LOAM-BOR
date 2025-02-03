@@ -22,12 +22,12 @@ int main(int argc, char** argv) {
 
   bool use_rosbag = false;
   rosbag::Bag bag;
-  if (!rosbag.empty()) {
+  if (!rosbag_path.empty()) {
     try {
-      bag.open(rosbag, rosbag::bagmode::Read);
+      bag.open(rosbag_path, rosbag::bagmode::Read);
       use_rosbag = true;
     } catch (std::exception& ex) {
-      ROS_FATAL("Unable to open rosbag [%s]", rosbag.c_str());
+      ROS_FATAL("Unable to open rosbag [%s]", rosbag_path.c_str());
       return 1;
     }
   }
