@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   cloud_msgs
   pcl_ros
   pcl_conversions
+  rosbag_storage
 )
 
 find_package(Eigen3 REQUIRED QUIET)
